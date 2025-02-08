@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ChangePasscodeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/backIconImageView"
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:contentDescription="@string/app_name"
+                        android:contextClickable="true"
+                        android:focusable="auto"
+                        android:longClickable="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:soundEffectsEnabled="true"
+                        app:srcCompat="@drawable/back"
+                        tools:src="@drawable/back"
+                        tools:srcCompat="@drawable/back" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="345dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:paddingLeft="-60dp"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    android:textColor="#7E79AF"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center">
+
+                <!-- Hidden EditText for capturing 6-digit input -->
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Enter Your Passcode"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/editTextPasscode"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:cursorVisible="false"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:visibility="visible" />
+
+                <!-- Container for the passcode dots -->
+                <LinearLayout
+                    android:id="@+id/passcodeContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- Each TextView acts as a digit placeholder -->
+                    <TextView
+                        android:id="@+id/digit1"
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="@dimen/image_size"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/circle_empty"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/digit2"
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="@dimen/image_size"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/circle_empty"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/digit3"
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="@dimen/image_size"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/circle_empty"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/digit4"
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="@dimen/image_size"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/circle_empty"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/digit5"
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="@dimen/image_size"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/circle_empty"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/digit6"
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="@dimen/image_size"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/circle_empty"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>

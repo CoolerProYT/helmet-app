@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AppIntegrationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/backIconImageView"
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:contentDescription="@string/app_name"
+                        android:contextClickable="true"
+                        android:focusable="auto"
+                        android:longClickable="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:soundEffectsEnabled="true"
+                        app:srcCompat="@drawable/back"
+                        tools:src="@drawable/back"
+                        tools:srcCompat="@drawable/back" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="345dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:paddingLeft="-60dp"
+                    android:text="ZEPHYR"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    android:textColor="#7E79AF"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_background"
+                android:backgroundTint="#2B2828"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="App Integration"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/text_size" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line"
+                    android:layout_marginHorizontal="10sp"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:id="@+id/google_map_icon"
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="match_parent"
+                        tools:src="@drawable/google_map" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Google Maps"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/text_size" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#000000"
+                        android:drawableTint="#AF8585"
+                        android:foregroundTint="#7C3D3D"
+                        android:outlineAmbientShadowColor="#FFFFFF"
+                        android:outlineSpotShadowColor="#FFFFFF"
+                        android:text="Connect"
+                        android:textColor="#FFFFFF" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:id="@+id/spotify_icon"
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="match_parent"
+                        tools:src="@drawable/spotify" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Spotify"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/text_size" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#000000"
+                        android:drawableTint="#AF8585"
+                        android:foregroundTint="#7C3D3D"
+                        android:outlineAmbientShadowColor="#FFFFFF"
+                        android:outlineSpotShadowColor="#FFFFFF"
+                        android:text="Connect"
+                        android:textColor="#FFFFFF" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:id="@+id/apple_music_icon"
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="match_parent"
+                        tools:src="@drawable/apple_music" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Apple Music"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/text_size" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#000000"
+                        android:drawableTint="#AF8585"
+                        android:foregroundTint="#7C3D3D"
+                        android:outlineAmbientShadowColor="#FFFFFF"
+                        android:outlineSpotShadowColor="#FFFFFF"
+                        android:text="Connect"
+                        android:textColor="#FFFFFF" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:id="@+id/waze_icon"
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="match_parent"
+                        tools:src="@drawable/waze" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Waze"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/text_size" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#000000"
+                        android:drawableTint="#AF8585"
+                        android:foregroundTint="#7C3D3D"
+                        android:outlineAmbientShadowColor="#FFFFFF"
+                        android:outlineSpotShadowColor="#FFFFFF"
+                        android:text="Connect"
+                        android:textColor="#FFFFFF" />
+                </TableRow>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>

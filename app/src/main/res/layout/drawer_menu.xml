@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_view"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:orientation="vertical"
+    android:background="#191818">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/sidebarImageView"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/menu_icon"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="305dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Hi, Zen"
+            android:textColor="#FFFFFF"
+            android:textSize="36dp"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sidebar_manage_account"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground">
+
+        <Space
+            android:layout_width="46dp"
+            android:layout_height="72dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/manageAccountImageView"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/manage_account" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Manage Account"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sidebar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground">
+
+        <Space
+            android:layout_width="46dp"
+            android:layout_height="72dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/settingsImageView"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/settings" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Settings"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="445dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="177dp"
+            android:layout_height="72dp"
+            android:layout_weight="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circularImageView"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            tools:srcCompat="@drawable/manage_account" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="364dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Zen Adam"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+</LinearLayout>
