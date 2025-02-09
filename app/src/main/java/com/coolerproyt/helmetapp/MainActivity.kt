@@ -74,6 +74,9 @@ class MainActivity : ComponentActivity() {
 
         val equalizerButton: TableRow = findViewById(R.id.equalizer)
         val dashcamButton: TableRow = findViewById(R.id.dashcam)
+        val findMyHelmetButton: TableRow = findViewById(R.id.findMyHelmet)
+        val emergencySosButton: TableRow = findViewById(R.id.emergencySos)
+        val powerOptionButton: TableRow = findViewById(R.id.powerOption)
 
         menuIconImageView.setOnClickListener {
             drawerLayout.openDrawer(GravityCompat.START)
@@ -100,6 +103,21 @@ class MainActivity : ComponentActivity() {
 
         dashcamButton.setOnClickListener{
             val intent = Intent(this, DashcamActivity::class.java)
+            startActivity(intent)
+        }
+
+        findMyHelmetButton.setOnClickListener{
+            val intent = Intent(this, FindMyHelmetActivity::class.java)
+            startActivity(intent)
+        }
+
+        emergencySosButton.setOnClickListener{
+            val intent = Intent(this, EmergencySosActivity::class.java)
+            startActivity(intent)
+        }
+
+        powerOptionButton.setOnClickListener{
+            val intent = Intent(this, PowerOptionActivity::class.java)
             startActivity(intent)
         }
     }

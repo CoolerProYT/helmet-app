@@ -272,6 +272,7 @@
                 </TableRow>
 
                 <TableRow
+                    android:id="@+id/findMyHelmet"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:padding="5sp"
@@ -307,6 +308,7 @@
                 </TableRow>
 
                 <TableRow
+                    android:id="@+id/emergencySos"
                     android:layout_width="match_parent"
                     android:layout_height="59dp"
                     android:padding="5sp"
@@ -342,6 +344,7 @@
                 </TableRow>
 
                 <TableRow
+                    android:id="@+id/powerOption"
                     android:layout_width="match_parent"
                     android:layout_height="58dp"
                     android:padding="5sp"

@@ -15,6 +15,15 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".PowerOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmergencySosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindMyHelmetActivity"
+            android:exported="false" />
+        <activity
             android:name=".DashcamActivity"
             android:exported="false" />
         <activity
